@@ -54,6 +54,8 @@
 .hero-full-screen .top-bar .menu-text {
   color: white;
   padding-left: 0px;
+  position: fixed;
+  backface-visibility: hidden;
 }
 .hero-full-screen .top-bar .menu li {
   display: flex;
@@ -69,7 +71,7 @@
 }
 
 .hero-full-screen {
-  animation: fullPage 0.98s;
+  animation: fullPage 1s;
 }
 
 svg {
@@ -201,6 +203,10 @@ body {
   list-style: none;
 }
 
+.buttonColor {
+  color: white;
+}
+
 .project {
   display: flex;
   justify-content: center;
@@ -222,6 +228,15 @@ h1 {
   h1 {
     font-size: 5.5rem;
   }
+}
+
+.button.hollow.secondary {
+  color: white;
+  border-color: white;
+  border-radius: 7px;
+}
+.button.hollow.secondary:hover, .button.hollow.secondary:focus {
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */

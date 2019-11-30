@@ -6,6 +6,10 @@ $hero-full-screen-bg: url('https://images.unsplash.com/photo-1446149710962-26e48
 $hero-full-screen-bg-size: cover;
 $hero-full-screen-text-color: white;
 
+
+
+
+
 .hero-full-screen {
   min-height: 100%;
   display: flex;
@@ -54,6 +58,8 @@ $hero-full-screen-text-color: white;
     .menu-text {
       color: $hero-full-screen-text-color;
       padding-left: 0px;
+      position: fixed;
+      backface-visibility: hidden;
     }
 
     .menu li {
@@ -74,8 +80,9 @@ $hero-full-screen-text-color: white;
 }
 
 .hero-full-screen { 
-    animation: fullPage .98s;
+    animation: fullPage 1s;
 }
+
 
 
 
@@ -215,7 +222,10 @@ background-image: url("https://www.transparenttextures.com/patterns/60-lines.png
   display: flex;
   flex-direction: column;
   list-style: none;
+}
 
+.buttonColor{
+  color: white;
 }
 
 .project{
@@ -235,5 +245,15 @@ h1{
 	}
   @include desktop{
     font-size: 5.5rem;
+  }
+}
+
+.button.hollow.secondary{
+  color: white;
+  border-color: white;
+  border-radius: 7px;
+  &:hover, &:focus{
+    color:black;
+
   }
 }
